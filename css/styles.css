@@ -246,12 +246,12 @@ body {
 }
 
 .social-media-footer {
+  margin-bottom: 16px;
   font-weight: 500px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--mmodal-background);
-  margin-bottom: 16px;
 }
 
 .social-media-footer-list {
@@ -364,13 +364,9 @@ body {
 }
 .hero-button:hover {
   background-color: var(--pressed-state);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .hero-button:focus {
   background-color: var(--pressed-state);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .list {
@@ -472,12 +468,16 @@ body {
   background-color: var(--pressed-state);
   color: var(--mmodal-background);
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button:focus {
   color: var(--mmodal-background);
   background-color: var(--pressed-state);
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-title {
@@ -545,13 +545,13 @@ body {
 }
 
 .customers-title {
+  margin-bottom: 72px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 36px;
   line-height: 1.11;
   color: var(--dark);
-  margin-bottom: 72px;
 }
 
 .customers-list {
