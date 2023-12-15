@@ -50,6 +50,8 @@ body {
   display: flex;
   background: var(--mmodal-background);
   border-bottom: 1px solid var(--accent);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .container {
@@ -189,6 +191,20 @@ body {
   text-decoration: none;
 }
 
+.portfolio-card-list-link {
+  display: block;
+}
+
+.portfolio-card-list-link:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-card-list-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .team-member {
   background-color: var(--mmodal-background);
   border-radius: 0px 0px 4px 4px;
@@ -220,7 +236,53 @@ body {
 }
 
 .footer-section {
-  flex-direction: column;
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+}
+
+.footer-items {
+  margin-right: 120px;
+}
+
+.social-media-footer {
+  font-weight: 500px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--mmodal-background);
+  margin-bottom: 16px;
+}
+
+.social-media-footer-list {
+  display: flex;
+  gap: 16px;
+}
+
+.social-media-footer-lists {
+  width: 40px;
+  height: 40px;
+}
+
+.social-media-footer-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-brand);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media-footer-link:hover {
+  background-color: var(--succes);
+}
+.social-media-footer-link:focus {
+  background-color: var(--succes);
+}
+
+.social-media-footer-icon {
+  fill: var(--modal-overlay);
 }
 
 .portfolio-section-header {
@@ -253,7 +315,16 @@ body {
 }
 
 .primary-section {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-image-workers.jpeg);
   background-color: var(--dark);
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   text-align: center;
   padding-top: 188px;
   padding-bottom: 188px;
@@ -293,9 +364,13 @@ body {
 }
 .hero-button:hover {
   background-color: var(--pressed-state);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .hero-button:focus {
   background-color: var(--pressed-state);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .list {
@@ -416,4 +491,100 @@ body {
 
 .portfolio-text {
   color: var(--text);
+}
+
+.section-two-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: var(--modal-overlay);
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.section-four-social-media {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.section-four-list {
+  width: 40px;
+  height: 40px;
+  list-style: none;
+}
+
+.section-four-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-brand);
+  border-radius: 50%;
+}
+
+.section-four-link:hover {
+  background-color: var(--pressed-state);
+}
+
+.section-four-link:focus {
+  background-color: var(--pressed-state);
+}
+
+.section-four-logos {
+  fill: var(--modal-overlay);
+}
+
+.customers-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.customers-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--dark);
+  margin-bottom: 72px;
+}
+
+.customers-list {
+  display: flex;
+  gap: 24px;
+  height: 88px;
+}
+
+.customers-lists {
+  width: calc((100% - 120px) / 6);
+}
+
+.customers-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--subtle-text);
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--subtle-text);
+  border-radius: 4px;
+}
+
+.customers-link:hover {
+  border-color: var(--pressed-state);
+  color: var(--pressed-state);
+}
+
+.customers-link:focus {
+  border-color: var(--pressed-state);
+  color: var(--pressed-state);
+}
+
+.customers-icons {
+  fill: currentColor;
 }
