@@ -41,6 +41,10 @@ body {
   background: var(--mmodal-background);
 }
 
+h2 {
+  margin: 0;
+}
+
 .images {
   display: block;
   max-width: 100%;
